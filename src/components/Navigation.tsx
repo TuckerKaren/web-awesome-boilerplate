@@ -31,6 +31,15 @@ function Navigation() {
             About
           </WaButton>
         </li>
+        <li>
+          <WaButton 
+            variant={location.pathname === '/tucker' ? 'brand' : 'neutral'}
+            onClick={() => navigate('/tucker')}
+          >
+            <WaIcon name="crown" />
+            Tucker
+          </WaButton>
+        </li>
       </ul>
     </nav>
   )
